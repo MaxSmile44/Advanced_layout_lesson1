@@ -2,6 +2,8 @@
 
 Видеоплеер на Django.
 
+Ссылка на сайт с [видеоплеером](https://maxsmile44.github.io/Advanced_layout_lesson1/)
+
 ## Запуск
 
 Для запуска блога у вас уже должен быть установлен Python 3.
