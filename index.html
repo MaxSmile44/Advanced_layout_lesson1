@@ -51,20 +51,29 @@
       font-family: 'Roboto', sans-serif;
       font-weight: 400;
       margin-bottom: 7px;
-      width: 70px;
+      width: 68px;
       height: 30px;
       font-size: 100%;
     }
     .current-time {
       padding-left: 0px;
-
     }
     .duration {
-      padding-left: 21px;
+      padding-left: 19px;
     }
-    .empty-area {
+    .progress {
       display: flex;
-      flex-grow: 1;  
+      border-radius: 30px;
+      flex-grow: 1;
+      background-color: transparent;
+      height: 6px;
+      margin-top: 13px;
+      padding-left: -2px;
+      padding-right: 10px;
+    }
+    .progress-slider {
+      background-color: red;
+      border-radius: 30px;
     }
   </style>  
 </head>
@@ -86,7 +95,10 @@
       </button>
       <button class="js-current-time time current-time">
       </button>
-      <div class="empty-area"></div>
+      <div class="js-progress progress">
+        <div class="js-progress-slider progress-slider"></div>
+      </div>
+
       <div>
         <button class="js-duration time duration">
         </button>
