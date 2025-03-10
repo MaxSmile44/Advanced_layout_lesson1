@@ -63,17 +63,26 @@
     }
     .progress {
       display: flex;
+      flex-direction: row;
       border-radius: 30px;
       flex-grow: 1;
-      background-color: transparent;
+      background-color: gray;
       height: 6px;
       margin-top: 13px;
-      padding-left: -2px;
-      padding-right: 10px;
     }
     .progress-slider {
       background-color: red;
       border-radius: 30px;
+    }
+    .dot {
+      height: 8px;
+      width: 8px;
+      background-color: red;
+      border-radius: 50%;
+      display: inline-block;
+      border-width: 3px;
+      border-color: white;
+      border-style: solid;
     }
   </style>  
 </head>
@@ -97,8 +106,8 @@
       </button>
       <div class="js-progress progress">
         <div class="js-progress-slider progress-slider"></div>
+        <span class="dot"></span>
       </div>
-
       <div>
         <button class="js-duration time duration">
         </button>
