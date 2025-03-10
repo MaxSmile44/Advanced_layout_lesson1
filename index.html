@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <link rel="icon" href="static/img/favicon-32x32.png">
   <link rel="stylesheet" href="static/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <style type="text/css">
     .player {
       width: 800px;
@@ -21,16 +22,45 @@
       background-color: black;
       display: flex;
     }
-    .player-button {
+    .buttons {
       color: white;
       border-style: none;
       cursor: pointer;
       background-color: transparent;
-      text-align: center;
-      margin: 4px 3px 6px 4px;
+      margin-bottom: 7px;
       width: 30px;
       height: 30px;
       font-size: 120%;
+    }
+    .play-button {
+      margin-left: 4px;
+      padding-right: 10px;
+    }
+    .volume-button {
+      margin-left: 6px;
+      padding-right: 10px;
+    }
+    .fullscreen-button {
+      margin-right: 7px;
+      padding-left: 10px;
+    }
+    .time {
+      color: white;
+      border-style: none;
+      background-color: transparent;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      margin-bottom: 7px;
+      width: 70px;
+      height: 30px;
+      font-size: 100%;
+    }
+    .current-time {
+      padding-left: 0px;
+
+    }
+    .duration {
+      padding-left: 21px;
     }
     .empty-area {
       display: flex;
@@ -42,22 +72,28 @@
   <div id="player" class="player">
     <div class="js-video-container screen"></div>
     <div class="bottom-controls">
-      <button class="js-play-button player-button">
+      <button class="js-play-button buttons play-button">
         <i class="fa fa-play" aria-hidden="true"></i>
       </button>
-      <button class="js-pause-button player-button">
+      <button class="js-pause-button buttons play-button">
         <i class="fa fa-pause" aria-hidden="true"></i>
       </button>
-      <button class="js-volume-button player-button">
+      <button class="js-volume-button buttons volume-button">
         <i class="fa fa-volume-off" aria-hidden="true"></i>
       </button>
-      <button class="js-mute-button player-button">
+      <button class="js-mute-button buttons volume-button">
         <i class="fa fa-volume-up" aria-hidden="true"></i>
       </button>
-      <div class="empty-area"></div>  
-      <button class="js-fullscreen-button player-button">
-        <i class="fa fa-expand" aria-hidden="true"></i>
-      </button>        
+      <button class="js-current-time time current-time">
+      </button>
+      <div class="empty-area"></div>
+      <div>
+        <button class="js-duration time duration">
+        </button>
+        <button class="js-fullscreen-button buttons fullscreen-button">
+          <i class="fa fa-expand" aria-hidden="true"></i>
+        </button>
+      </div>
     </div>
   </div>
 
