@@ -1,0 +1,78 @@
+    :focus-visible {
+      outline: none;
+    }
+	.player {
+      width: 800px;
+      height: 600px;
+      box-shadow: 2px 2px 12px 12px rgba(80, 80, 80, 0.5);
+      display: flex;
+      flex-direction: column;
+    }
+    .screen {
+      display: flex;
+      flex-grow: 2;
+    }
+    .bottom-controls {
+      background-color: black;
+      display: flex;
+	  padding: 0px 4px 7px 4px;
+	  column-gap: 5px;
+    }
+    .buttons {
+      color: white;
+	  border: 1px solid white;
+      cursor: pointer;
+      background-color: transparent;
+	  width: 30px;
+	  height: 30px;
+      font-size: 120%;
+    }
+	.progress-bar {
+	  display: flex;
+	  flex-grow: 1;
+      column-gap: 10px;
+	  align-items: center;
+	}
+    .time {
+      color: white;
+	  border: 1px solid white;
+      background-color: transparent;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+	  width: 53px;
+	  height: 30px;
+	  font-size: 100%;
+	  padding: 0px;
+    }
+    .progress {
+	  display: flex;
+	  flex-grow: 1;
+      border-radius: 30px;
+      background-color: transparent;
+	  height: 6px;
+    }
+    .progress-slider {
+      background-color: red;
+      border-radius: 30px;
+    }
+    .dot {
+      height: 8px;
+      width: 8px;
+      background-color: red;
+      border-radius: 50%;
+      display: inline-block;
+      border-width: 3px;
+      border-color: white;
+      border-style: solid;
+      margin-left: -7px;
+      margin-top: -3px;
+      opacity: 0;
+      transition-property: opacity;
+      transition-duration: 300ms;
+      transition-timing-function: ease-out;
+    }
+    .progress:hover .dot {
+      opacity: 1;
+      transition-duration: 300ms;
+      transition-timing-function: ease-in;
+    }
