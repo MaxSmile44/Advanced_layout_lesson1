@@ -16,7 +16,7 @@
       background-color: black;
       display: flex;
 	  padding: 0px 4px 7px 4px;
-	  column-gap: 5px;
+	  column-gap: 6px;
     }
     .buttons {
       color: white;
@@ -31,18 +31,18 @@
 	  display: flex;
 	  flex-grow: 1;
       column-gap: 10px;
-	  align-items: center;
+	  align-items: center;	
 	}
     .time {
+	  display: flex;	
       color: white;
 	  border-style: none;
       background-color: transparent;
       font-family: 'Roboto', sans-serif;
       font-weight: 400;
-	  width: 53px;
-	  height: 30px;
 	  font-size: 16px;
 	  padding: 0px;
+	  flex-shrink: 0;
     }
     .progress {
 	  display: flex;
