@@ -25,7 +25,7 @@
       background-color: transparent;
 	  width: 30px;
 	  height: 30px;
-      font-size: 120%;
+      font-size: 19.2px;
     }
 	.progress-bar {
 	  display: flex;
@@ -41,7 +41,7 @@
       font-weight: 400;
 	  width: 53px;
 	  height: 30px;
-	  font-size: 100%;
+	  font-size: 16px;
 	  padding: 0px;
     }
     .progress {
