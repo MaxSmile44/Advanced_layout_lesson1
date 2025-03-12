@@ -71,7 +71,7 @@
       transition-duration: 300ms;
       transition-timing-function: ease-out;
     }
-    .progress:hover .dot {
+    .progress-bar:hover .dot {
       opacity: 1;
       transition-duration: 300ms;
       transition-timing-function: ease-in;
