@@ -20,7 +20,7 @@
     }
     .buttons {
       color: white;
-	  border: 1px solid white;
+	  border-style: none;
       cursor: pointer;
       background-color: transparent;
 	  width: 30px;
@@ -35,7 +35,7 @@
 	}
     .time {
       color: white;
-	  border: 1px solid white;
+	  border-style: none;
       background-color: transparent;
       font-family: 'Roboto', sans-serif;
       font-weight: 400;
